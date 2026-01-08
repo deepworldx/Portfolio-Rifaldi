@@ -1,38 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ================= META ================= -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | DeepWorld</title>
+  <meta charset="UTF-8">
+  <title>Projects | DeepWorld</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ================= FAVICON ================= -->
-  <link rel="icon" type="image/png" href="assets/icon/dwicon.png">
+  <link rel="icon" href="assets/icon/dwicon.png">
+  <link rel="stylesheet" href="css/project.css">
 
-  <!-- ================= CSS ================= -->
-  <link rel="stylesheet" href="css/styleabout.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
 
-  <!-- ================= FONTS ================= -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
-  <link
-    href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
-    rel="stylesheet"
-  >
-
-  <!-- ================= JS ================= -->
-  <script src="js/about.js" defer></script>
+  <script src="js/project.js" defer></script>
 </head>
 
 <body>
 
-  <!-- ================= MATRIX ================= -->
-  <!-- Canvas matrix background (handled by JS) -->
-
-  <!-- ================= NAVBAR ================= -->
-  <nav class="navbar">
+ <nav class="navbar">
     <div class="nav-container">
 
       <!-- Nickname / Logo -->
@@ -56,7 +40,7 @@
           </a>
         </li>
         <li>
-          <a href="#contact" class="acak" data-text="CONTACT" data-random="CONTACT">
+          <a href="contact.html" class="acak" data-text="CONTACT" data-random="CONTACT">
             CONTACT
           </a>
         </li>
@@ -65,9 +49,123 @@
     </div>
   </nav>
 
-  <!-- ================= PROFILE SECTION ================= -->
-  <section class="about-profile" id="about">
-  </section>
+  <main class="projects">
+  <h1 class="title">Some project for frontend development</h1>
+
+  <div class="grid">
+
+    <!-- 1 -->
+    <div class="card">
+      <h3>SYSTEM STATUS</h3>
+      <p>CPU Usage Monitor</p>
+      <div class="bar"><div class="fill" id="cpu"></div></div>
+      <small id="cpuText">0%</small>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+      <h3>RAM MONITOR</h3>
+      <p>Memory simulation</p>
+      <div class="bar"><div class="fill" id="ram"></div></div>
+      <small id="ramText">0%</small>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+      <h3>SECURITY SCAN</h3>
+      <p>Fake scanning process</p>
+      <div class="bar"><div class="fill" id="scan"></div></div>
+      <small id="scanText">Idle</small>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+      <h3>LOGIN SIMULATOR</h3>
+      <p>Authentication UI</p>
+      <button onclick="login()">LOGIN</button>
+      <small id="loginStatus">Waiting...</small>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+      <h3>PASSWORD STRENGTH</h3>
+      <p>Password meter</p>
+      <input type="password" id="pass" placeholder="Password" class="passinput">
+      <div class="bar"><div class="fill" id="strength"></div></div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+      <h3>TERMINAL LOG</h3>
+      <p>Fake system output</p>
+      <pre id="terminal"></pre>
+    </div>
+
+    <!-- 7 -->
+    <div class="card">
+      <h3>DOWNLOAD TASK</h3>
+      <p>Progress simulation</p>
+      <div class="bar"><div class="fill" id="download"></div></div>
+      <small id="downloadText">0%</small>
+    </div>
+
+    <!-- 8 -->
+    <div class="card">
+      <h3>UPTIME COUNTER</h3>
+      <p>System running time</p>
+      <strong id="uptime">00:00:00</strong>
+    </div>
+
+    <!-- 9 -->
+    <div class="card">
+      <h3>RANDOM CODE</h3>
+      <p>Generate access key</p>
+      <button onclick="genCode()">GENERATE</button>
+      <small id="code">----------</small>
+    </div>
+
+    <!-- 10 -->
+    <div class="card">
+      <h3>STATUS TOGGLE</h3>
+      <p>Server power</p>
+      <button onclick="toggleServer()">OFFLINE</button>
+    </div>
+</div>
+<div class="website1">
+  <h1>Website Project</h1>
+  <img src="assets/image/amandastore.png" alt="AmandaStore">
+    <img src="assets/image/amandastore2.png" alt="AmandaStore">
+      <img src="assets/image/amandastore3.png" alt="AmandaStore">
+      <!-- ================= DW CORE PET (RAW) ================= -->
+<div class="dw-pet">
+<p>This is Dexx! You can feed him everyday!,(if you want, hehe XD)</p>
+<br>
+  <div class="pet-body">
+   
+    <div class="pet-eyes">
+      <span class="eye"></span>
+      <span class="eye"></span>
+    </div>
+    <div class="pet-mouth"></div>
+  </div>
+
+  <div class="pet-hud">
+    <div class="hud-top">
+      <span>LV <b id="petLevel">1</b></span>
+      <span id="petMood">IDLE</span>
+    </div>
+
+    <div class="xp-bar">
+      <div class="xp-fill" id="petXP"></div>
+    </div>
+
+    <small id="petStatus">Awaiting input...</small>
+  </div>
+
+  <button id="petFeedBtn">FEED</button>
+</div>
+
+</div>
 
 </body>
 </html>
