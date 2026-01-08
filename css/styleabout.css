@@ -477,3 +477,141 @@ body::after {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
 }
+
+.app,img{
+  width: 50px;
+  height: 50px;
+  padding: 20;
+}
+.app,th{
+  padding: 20px;
+}
+/* ================= GLOBAL RESPONSIVE FIX ================= */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ================= ABOUT CONTAINER ================= */
+.about {
+  padding: 120px 6% 140px;
+}
+
+/* Desktop besar */
+@media (min-width: 1400px) {
+  .about {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
+
+/* ================= ABOUT CONTENT ================= */
+.about-content {
+  align-items: start;
+}
+
+/* ================= PROFILE ================= */
+@media (max-width: 768px) {
+  .about-profile {
+    min-height: 70vh;
+    padding-top: 80px;
+  }
+
+  .profile-frame {
+    width: 180px;
+    height: 230px;
+  }
+
+  .profile-tagline {
+    font-size: 22px;
+  }
+}
+
+/* ================= TEXT ================= */
+@media (max-width: 768px) {
+  .about-text p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+
+/* ================= TITLE ================= */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+/* ================= SOFT SKILL ================= */
+@media (max-width: 768px) {
+  .softskill {
+    padding: 80px 10px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .softskill-list {
+    gap: 20px;
+  }
+}
+
+/* ================= WORK EXPERIENCE ================= */
+@media (max-width: 768px) {
+  .about-skills {
+    padding: 30px 20px;
+  }
+
+  .about-skills h3 {
+    font-size: 18px;
+  }
+
+  .about-skills li {
+    font-size: 15px;
+    padding-left: 35px;
+  }
+}
+
+/* ================= SOFTWARE SKILL ICON ================= */
+.app table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.app img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Mobile icon grid */
+@media (max-width: 768px) {
+  .app img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .app th {
+    padding: 10px;
+  }
+}
+
+/* ================= NAVBAR ================= */
+@media (max-width: 768px) {
+  .navbar {
+    height: 45px;
+  }
+
+  .nav-menu {
+    gap: 14px;
+  }
+
+  .nav-menu a {
+    font-size: 11px;
+  }
+
+  .nickname {
+    font-size: 14px;
+  }
+}
